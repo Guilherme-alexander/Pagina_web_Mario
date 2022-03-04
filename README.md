@@ -15,7 +15,7 @@
 > 
 > Semântica do Html5
 >
->Imagnes montadas no figma retiradas da Web
+>Imagens montadas no figma retiradas da Web
   
   <br>
   
@@ -28,7 +28,7 @@
  
  # Futuros Uptades
  * crias mais páginas
- * abilitar modo Dark
+ * habilitar modo Dark
  * animações e vídeos 
  * Melhorias No Css
  
