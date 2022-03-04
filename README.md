@@ -26,8 +26,8 @@
  ## versão alternativa 
  ![Image Project](https://github.com/Guilherme-alexander/Game-Mario_Pagina_web/blob/main/Luid%20(1).png)
  
- # Futuros Uptades
- * crias mais páginas
+ # Futuros Updates
+ * criar mais páginas
  * habilitar modo Dark
  * animações e vídeos 
  * Melhorias No Css
