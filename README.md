@@ -10,7 +10,7 @@
 
 
 ### projeto criado no figma depois criado com Html Css JavaScript
-### [Link Previw](https://guilherme-alexander.github.io/Game-Mario_Pagina_web/)
+### [Link Preview](https://guilherme-alexander.github.io/Game-Mario_Pagina_web/)
 > Projeto responsivo com menu mobile
 > 
 > Semântica do Html5
