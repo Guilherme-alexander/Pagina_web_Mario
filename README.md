@@ -10,12 +10,12 @@
 
 
 ### projeto criado no figma depois criado com Html Css JavaScript
-### [Link Previw](https://guilherme-alexander.github.io/Game-Mario_Pagina_web/)
+### [Link Preview](https://guilherme-alexander.github.io/Game-Mario_Pagina_web/)
 > Projeto responsivo com menu mobile
 > 
 > Semântica do Html5
 >
->Imagnes montadas no figma retiradas da Web
+>Imagens montadas no figma retiradas da Web
   
   <br>
   
@@ -26,9 +26,9 @@
  ## versão alternativa 
  ![Image Project](https://github.com/Guilherme-alexander/Game-Mario_Pagina_web/blob/main/Luid%20(1).png)
  
- # Futuros Uptades
- * crias mais páginas
- * abilitar modo Dark
+ # Futuros Updates
+ * criar mais páginas
+ * habilitar modo Dark
  * animações e vídeos 
  * Melhorias No Css
  
