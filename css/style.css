@@ -158,11 +158,35 @@ form input[type=submit]{
     color:var(--white);
     background-color:var(--red);
 }
-
+.left {
+    animation: leftAnimation 1s ease 0s 1 normal forwards;
+}
+@keyframes leftAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 .w50 > img{
     width:600px;
+    animation: itsMario 1s ease 0s 1 normal forwards;
 }
-
+@keyframes itsMario {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 @keyframes showTop {
     from {
@@ -234,6 +258,7 @@ form input[type=submit]{
 @media screen and (max-width:850px){
     nav.menu-mobile{
         display: block;
+        cursor: pointer;
     }
 
     nav.menu-mobile ul.active{
