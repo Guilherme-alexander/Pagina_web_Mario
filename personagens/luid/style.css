@@ -4,7 +4,7 @@
     --gray:#8D8D8D;
     --darkGray:#555555;
     --lightGray:#C4C4C4;
-    --red:#FF0000;
+    --green:#08CF1C;
 }
 
 *{
@@ -17,7 +17,7 @@
 
 .active-menu{
     font-weight:bold;
-    color:var(--red) !important;
+    color:var(--green) !important;
 }
 
 .container{
@@ -68,7 +68,7 @@ header{
 
 .dark nav.menu-desktop ul li:nth-last-child(1) > a{
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--green);
 }
 
 .dark article > p{
@@ -140,16 +140,16 @@ nav.menu-desktop ul li a{
     color:var(--gray);
 }
 nav.menu-desktop ul li:nth-last-child(1) a{
-    color:#f00;
+    color:var(--green);
     padding:10px;
     border-radius:10px;
-    border:2px solid var(--red);
+    border:2px solid var(--green);
     transition:.5s;
 }
 
 nav.menu-desktop ul li:nth-last-child(1) a:hover{
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--green);
 }
 /* <===== Header Menu Desktop =====> */
 
@@ -177,7 +177,7 @@ nav.menu-mobile ul li{
     transition:1s;
 }
 nav.menu-mobile ul li:hover a{
-    background-color: var(--red);
+    background-color: var(--green);
     color:var(--white);
     font-weight:bold;
 }
@@ -204,7 +204,7 @@ article h1{
 }
 
 article h1 span{
-    color: var(--red);
+    color: var(--green);
 }
 
 article p{
@@ -234,7 +234,7 @@ form input[type=submit]{
     border-radius:25px;
     border:0;
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--green);
 }
 .left {
     animation: leftAnimation 1s ease 0s 1 normal forwards;
@@ -323,7 +323,7 @@ form input[type=submit]{
         border-radius:25px;
         border:0;
         color:var(--white);
-        background-color:var(--red);
+        background-color:var(--green);
     }
 
     .w50 > img{
