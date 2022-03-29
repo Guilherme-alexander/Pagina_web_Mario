@@ -1,0 +1,390 @@
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --gray:#8D8D8D;
+    --darkGray:#555555;
+    --lightGray:#C4C4C4;
+    --red:#FF0000;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* <===== Class Úteis =====> */
+
+.active-menu{
+    font-weight:bold;
+    color:var(--red) !important;
+}
+
+.container{
+    max-width:1280px;
+    padding:0 2%;
+    margin:190px auto;
+    display: flex;
+}
+
+.w50{
+    width:50%;
+}
+
+/* <===== Fim Class Úteis =====> */
+
+/* <===== Header =====> */
+header{
+    width:100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width:100px;
+}
+.logo img{
+    width:60px;
+}
+
+.mode{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.change {
+    cursor: pointer;
+    border: 1px solid #555;
+    text-align: center;
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+.dark nav.menu-desktop ul li >  a{
+    color: #e6e6e6;
+}
+
+.dark nav.menu-desktop ul li:nth-last-child(1) > a{
+    color:var(--white);
+    background-color:var(--red);
+}
+
+.dark article > p{
+    color: #e6e6e6;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.switch i{
+    font-size:30px;
+}
+
+.slider{
+    position: absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: var(--darkGray);
+    transition:.4s;
+    border-radius: 34px;
+}
+
+.slider:before{
+    content:'';
+    width:25px;
+    height:25px;
+    color:black;
+    position: absolute;
+    left:3px;
+    bottom:3px;
+    background-color: var(--white);
+    transition: .4s;
+    border-radius:50px;
+}
+
+.switch input{
+    display:none;
+}
+
+input:checked + .slider{
+    background-color: var(--gray);
+}
+input:checked + .slider:before{
+    transform: translateX(30px);
+    background-color: #222;
+}
+
+/* <===== Header Menu Desktop =====> */
+nav.menu-desktop{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style-type:none;
+}
+nav.menu-desktop ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+nav.menu-desktop ul li a{
+    text-decoration:none;
+    color:var(--gray);
+}
+nav.menu-desktop ul li:nth-last-child(1) a{
+    color:#f00;
+    padding:10px;
+    border-radius:10px;
+    border:2px solid var(--red);
+    transition:.5s;
+}
+
+nav.menu-desktop ul li:nth-last-child(1) a:hover{
+    color:var(--white);
+    background-color:var(--red);
+}
+/* <===== Header Menu Desktop =====> */
+
+nav.menu-mobile{
+    display: none;
+}
+
+nav.menu-mobile i{
+    font-size:35px;
+    padding:5px;
+}
+nav.menu-mobile ul{
+    display: none;
+    position:absolute;
+    top:75px;
+    left:0;
+    z-index:10;
+    width:100%;
+    background-color: #e4e4e4;
+}
+nav.menu-mobile ul li{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid var(--white);
+    transition:1s;
+}
+nav.menu-mobile ul li:hover a{
+    background-color: var(--red);
+    color:var(--white);
+    font-weight:bold;
+}
+nav.menu-mobile ul li a{
+    display: block;
+    text-decoration:none;
+    padding:15px 0;
+    color:var(--black);
+    cursor: pointer;
+}
+
+/* <===== Fim Header =====> */
+
+main{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+article h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+article h1 span{
+    color: var(--red);
+}
+
+article p{
+    color:var(--gray);
+}
+form{
+    margin:20px 0;
+    width:500px;
+}
+form input[type=text],
+input[type=email]{
+    width:400px;
+    height: 45px;
+    padding-left:15px;
+    margin:8px 0;
+    border-radius:25px;
+    outline: none;
+    border:1px solid var(--lightGray);
+}
+
+form input[type=submit]{
+    width:150px;
+    height: 50px;
+    font-weight: bold;
+    margin-top:10px;
+    outline: none;
+    border-radius:25px;
+    border:0;
+    color:var(--white);
+    background-color:var(--red);
+}
+.left {
+    animation: leftAnimation 1s ease 0s 1 normal forwards;
+}
+@keyframes leftAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.w50 > img{
+    width:600px;
+    animation: itsMario 1s ease 0s 1 normal forwards;
+}
+@keyframes itsMario {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes showTop {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottom {
+    from {
+      opacity: 1;
+      transform: translate3d(0, 30px, 0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@media screen and (max-width:1210px){
+    .w50{
+        width:50%;
+    }
+    
+    article h1{
+        font-size:45px;
+    }
+
+    article p{
+        color:var(--gray);
+        font-size:14px;
+    }
+
+    form{
+        margin:20px 0;
+        width:300px;
+    }
+
+    form input[type=text],
+    input[type=email]{
+        width:300px;
+    }
+
+    form input[type=submit]{
+        width:130px;
+        height: 45px;
+        font-weight: bold;
+        outline: none;
+        border-radius:25px;
+        border:0;
+        color:var(--white);
+        background-color:var(--red);
+    }
+
+    .w50 > img{
+        width:420px;
+    }
+}
+
+
+
+@media screen and (max-width:850px){
+    nav.menu-mobile{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.menu-mobile ul.active{
+        display:block;
+        animation: showTop .5s ease-in;
+    }
+
+    nav.menu-desktop{
+        display:none;
+    }
+    
+    .container{
+        margin:0;
+        flex-direction: column;
+    }
+    .w50{
+        width:100%;
+    }
+    article{
+        text-align: center;
+    }
+    article h1{
+        font-size:40px;
+    }
+    article p{
+        margin:0 30px;
+        height:100px;
+        overflow-y:scroll;
+    }
+    form{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .left{
+        position: relative;
+        order:2;
+    }
+    .right{
+        position: relative;
+        order:1;
+        text-align: center;
+        margin:50px 0;
+    }
+    .w50 > img{
+        width:300px;
+    }
+}
