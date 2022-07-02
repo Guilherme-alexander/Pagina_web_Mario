@@ -48,25 +48,25 @@ let svg = document.querySelectorAll("[fill]")
 let variavelCor = document.querySelector(':root');
 
 let marioPage = ()=>{
-    logo.src = '../imagens/LogoMario.png';
+    logo.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/LogoMario.png?raw=true';
     logo.style.width = '58px';
-    imgPage.src = '../imagens/mario.png';
+    imgPage.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/mario.png?raw=true';
     colorBG('#FF0000');
     selectedMenu('mario');
 }
 
 let luidPage = ()=>{
-    logo.src = '../imagens/LogoLuid.png';
+    logo.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/LogoLuid.png?raw=true';
     logo.style.width = '60px';
-    imgPage.src = '../imagens/luid.png';
+    imgPage.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/luid.png?raw=true';
     colorBG('#08CF1C');
     selectedMenu('luid');
 }
 
 let PokemonPage = ()=>{
-    logo.src = '../imagens/LogoPokemon.png';
+    logo.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/LogoPokemon.png?raw=true';
     logo.style.width = '170px';
-    imgPage.src = '../imagens/pokemons.png';
+    imgPage.src = 'https://github.com/Guilherme-alexander/Pagina_web_Mario/blob/main/imagens/pokemons.png?raw=true';
     colorBG('#303795');
     selectedMenu('pokemon');
 }
