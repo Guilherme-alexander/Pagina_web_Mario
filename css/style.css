@@ -4,7 +4,12 @@
     --gray:#8D8D8D;
     --darkGray:#555555;
     --lightGray:#C4C4C4;
-    --red:#FF0000;
+    --color:#ff0000;
+/*
+--red:#FF0000;
+--blue:#303795;
+--green:#08CF1C;
+*/
 }
 
 *{
@@ -12,12 +17,19 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    user-select:none;
 }
+
+::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+
 /* <===== Class Úteis =====> */
 
 .active-menu{
     font-weight:bold;
-    color:var(--red) !important;
+    color:var(--color) !important;
 }
 
 .container{
@@ -68,7 +80,7 @@ header{
 
 .dark nav.menu-desktop ul li:nth-last-child(1) > a{
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--color);
 }
 
 .dark article > p{
@@ -140,16 +152,16 @@ nav.menu-desktop ul li a{
     color:var(--gray);
 }
 nav.menu-desktop ul li:nth-last-child(1) a{
-    color:#f00;
+    color:var(--color);
     padding:10px;
     border-radius:10px;
-    border:2px solid var(--red);
+    border:2px solid var(--color);
     transition:.5s;
 }
 
 nav.menu-desktop ul li:nth-last-child(1) a:hover{
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--color);
 }
 /* <===== Header Menu Desktop =====> */
 
@@ -177,8 +189,8 @@ nav.menu-mobile ul li{
     transition:1s;
 }
 nav.menu-mobile ul li:hover a{
-    background-color: var(--red);
-    color:var(--white);
+    background-color: var(--color);
+    color:var(--white) !important;
     font-weight:bold;
 }
 nav.menu-mobile ul li a{
@@ -204,7 +216,7 @@ article h1{
 }
 
 article h1 span{
-    color: var(--red);
+    color: var(--color);
 }
 
 article p{
@@ -234,7 +246,7 @@ form input[type=submit]{
     border-radius:25px;
     border:0;
     color:var(--white);
-    background-color:var(--red);
+    background-color:var(--color);
 }
 .left {
     animation: leftAnimation 1s ease 0s 1 normal forwards;
@@ -323,7 +335,7 @@ form input[type=submit]{
         border-radius:25px;
         border:0;
         color:var(--white);
-        background-color:var(--red);
+        background-color:var(--color);
     }
 
     .w50 > img{

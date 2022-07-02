@@ -29,10 +29,10 @@
          <!-- Menu desktop -->
         <nav class="menu-desktop">
             <ul>
-                <li><a class="active-menu" href="personagens/mario/mario.html">Mario</a></li>
-                <li><a href="personagens/luid/luid.html">Luid</a></li>
-                <li><a href="personagens/pokemon/pokemon.html">Pokémon</a></li>
-                <li><a href="https://github.com/Guilherme-alexander/Game-Mario_Pagina_web">GitHube</a></li>
+                <li><a onclick="marioPage()" class="mario active-menu" href="#">Mario</a></li>
+                <li><a onclick="luidPage()" class="luid" href="#">Luid</a></li>
+                <li><a onclick="PokemonPage()" class="pokemon" href="#">Pokémon</a></li>
+                <li><a id="GitHube" href="https://github.com/Guilherme-alexander/Pagina_web_Mario">GitHube</a></li>
             </ul>
             
             <div class="mode">
@@ -47,10 +47,10 @@
         <nav class="menu-mobile">
             <i class="las la-bars"></i>
             <ul>
-                <li><a class="active-menu" href="personagens/mario/mario.html">Mario</a></li>
-                <li><a href="/luid/luid.html">Luid</a></li>
-                <li><a href="/pokemon/pokemon.html">Pokémon</a></li>
-                <li><a href="https://github.com/Guilherme-alexander/Game-Mario_Pagina_web">GitHube</a></li>
+                <li><a onclick="marioPage()" class="active-menu" href="#">Mario</a></li>
+                <li><a onclick="luidPage()" href="#">Luid</a></li>
+                <li><a onclick="PokemonPage()" href="#">Pokémon</a></li>
+                <li><a id="GitHube" href="https://github.com/Guilherme-alexander/Pagina_web_Mario">GitHube</a></li>
             </ul>
         </nav>
     </header>
@@ -69,8 +69,9 @@
                 </article>
 
                 <form>
-                    <input type="text" name="name" placeholder="Nome">
-                    <input type="email" name="email" placeholder="E-mail">
+                    <input required type="text" name="name" placeholder="Nome">
+                    <input required type="email" name="email" placeholder="E-mail">
+
                     <input type="submit" value="Enviar">
                 </form>
 
